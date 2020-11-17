@@ -1,0 +1,66 @@
+*{
+	font-family: 'Poppins', sans-serif;
+	
+	
+}
+body{
+	display:flex;
+	justify-content:center;
+	align-items:center;
+	min-height:95vh;
+	background:#252839;
+	
+	
+	
+}
+h2{
+	
+	position:relative;
+	font-size:150px;
+	color:#252839;
+	
+	-webkit-text-stroke:2px #383d52;
+	text-transform:uppercase;
+	
+	
+	
+}
+
+h2::before{
+	
+	content:attr(data-text);
+	position: absolute;
+	top:0;
+    left:-12px;
+    width: 0;
+   height:100%;
+    border-right: 8px solid #52a8e9; border-bottom: 8px solid #52a8e9;
+    
+	color:#52a8e9;
+	-webkit-text-stroke:2px #383d52;
+	overflow:hidden;
+	animation-name:animatetext;
+	animation-iteration-count:infinite;
+	animation-duration:10s;
+	animation-timing-function:linear;
+	
+	
+	
+}
+
+@keyframes animatetext{
+	
+	0%,10%.100%{
+		width:0px;
+		
+	}
+	70%,90%{
+		width:100%;
+		
+	}
+	 90%{
+		width:100%;
+		
+	}
+	
+}
